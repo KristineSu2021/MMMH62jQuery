@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<body>
+    <button>Next Page</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        // ES5
+        // var nowPageIndex = 0;
+
+        // ES6
+        // let nowPageIndex = 0;
+
+        // console.log('nowPageIndex 1:', nowPageIndex);
+
+        // x = x + 1;
+        // x += 1;
+
+        // $('button').click(function () {
+        //     nowPageIndex += 1;
+        //     console.log('nowPageIndex 2:', nowPageIndex);
+
+        //     if (nowPageIndex > 4) {
+        //         nowPageIndex = 0;
+        //     }
+
+        //     console.log('nowPageIndex 3:', nowPageIndex * -800 + 'px');
+        // });
+
+        // $('button').click(function () {
+        //     if (nowPageIndex > 3) {
+        //         nowPageIndex = 0;
+        //     }
+        //     else {
+        //         nowPageIndex += 1;
+        //     }
+
+        //     console.log('nowPageIndex:', nowPageIndex * -800 + 'px');
+        // });
+    </script>
+
+    <script>
+        // 變數要注意作用域
+
+        // 全域變數(global)
+        var x = 10;
+
+        // 立刻執行一個匿名函式
+        (function () {
+            x += 1;
+        })();
+
+        console.log('x', x);
+
+        function myFunction(a, b, c, d) {
+            console.log('hi myFunction', a, b, c, d);
+        }
+
+        $('button').click(function () {
+            // x += 1;
+
+            // if (x > 12) {
+            //     myFunction('aloha', 777, 'yes', x);
+            // }
+
+            const x = add(12, 3);
+
+            console.log('x', x);
+
+        });
+
+        function add(a, b) {
+            console.log('a+b:', a + b);
+
+            // return a + b;
+        }
+
+        // 單元測試 Unit Test (QA TEST)
+
+    </script>
+</body>
+
+</html>

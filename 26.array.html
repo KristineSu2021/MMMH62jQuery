@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+
+<body>
+    <script>
+        // 一維陣列
+        let myArray = ['abc', 123, 'def', 456, true];
+
+        console.log('第一格', myArray[0]);
+        console.log('第二格', myArray[1]);
+        console.log('第三格', myArray[2]);
+        console.log('第四格', myArray[3]);
+        console.log('第五格', myArray[4]);
+
+        // 二維陣列
+        let districtArray = [
+            ['七堵', '中正', '暖暖'],
+            ['中正', '大安', '信義'],
+            ['蘆洲', '三重', '新店'],
+        ];
+
+        console.log('第一格', districtArray[0]);
+        console.log('第一格裡面的第一格', districtArray[0][0]);
+        console.log('第一格裡面的第二格', districtArray[0][1]);
+        console.log('第一格裡面的第三格', districtArray[0][2]);
+
+        // 用迴圈的方式來讀資料
+        for (let i = 0; i < 3; i++) {
+            console.log(`第一格裡面的第${i}格`, districtArray[0][i]);
+        }
+
+
+    </script>
+</body>
+
+</html>

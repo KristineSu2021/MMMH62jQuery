@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var</title>
+</head>
+
+<body>
+    <script>
+        // ES5 var 宣告
+
+        // 因為 var 有一個特性叫做: 提昇 Hoist
+        // 未定義 undefined，但有宣告
+        // console.log('x:', x);
+        // var x = 10;
+
+        // 變成：
+        // var x; ---> 所有的宣告會被提升到最上面
+        // console.log('x:', x);
+        // x = 10;
+
+        // 沒有宣告 not defined
+        // console.log('bbb:', bbb);
+
+        // var y;
+        // console.log('y:', y);
+
+        // ES6
+        // Cannot access 'z' before initialization
+        // console.log('z:', z);
+        // let z = 10;
+        // console.log('z:', z);
+        // z = 20 + 2;
+        // console.log('z:', z);
+
+
+
+        // 重複宣告
+        // var x = 10;
+        // console.log('x:', x);
+
+        // var x = 20;
+        // console.log('x:', x);
+
+        // Error: Identifier 'x' has already been declared
+        // let x = 10;
+        // console.log('x:', x);
+
+        // let x = 20;
+        // console.log('x:', x);
+
+
+
+        // const 固定變數
+        // 當你首次宣告之後，就不能再重新賦值
+        // const x = 10;
+        // console.log('x:', x);
+        // Error: Assignment to constant variable.
+        // x = '20';
+
+        const x = [1, 2, 3];
+        console.log('x:', x);
+        // 我可以使用陣列的方法，把值放到陣列裡面去(並沒有修改記憶體位置)
+        x.push(4);
+        console.log('x:', x);
+
+
+    </script>
+</body>
+
+</html>
